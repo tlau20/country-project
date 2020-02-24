@@ -1,0 +1,60 @@
+table {
+    border: 1px solid rgb(224, 224, 224);
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+th {
+    font-size: 1.8em;
+    padding: 20px 0;
+}
+
+td {
+    border-top: 1px solid rgb(224, 224, 224);
+    padding: 10px 0;
+    font-size: .8em;
+}
+
+td a {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.price {
+    color: black;
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+.superscript {
+    position: relative;
+    top: -14px;
+    left: -3px;
+    font-size: .5em;
+}
+
+.book {
+    padding: 25px 0;
+}
+
+@media (min-width: 750px) {
+    table {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .packages {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 36px;
+    }
+
+    .travel-package {
+        width: 32%;
+    }
+}

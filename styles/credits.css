@@ -1,0 +1,94 @@
+.banner {
+    height: 200px;
+    background-color: rgb(240, 240, 240);
+}
+
+.banner h1 {
+    color: black;
+}
+
+article {
+    text-align: center;
+    position: relative;
+}
+
+article img {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+article h2 {
+    position: absolute;
+    /* text-transform: none; */
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article:hover img {
+    opacity: 0.15;
+}
+
+article:hover h2 {
+    opacity: 1;
+    color: rgb(156, 156, 156);
+}
+
+article a {
+    text-decoration: none;
+}
+
+.hover-text {
+    padding: 8px 15px;
+}
+
+article a:visited {
+    color: black;
+}
+
+article a:hover,
+article a:focus,
+article a:active {
+    color: rgb(145, 17, 17);
+}
+
+@media (min-width: 600px) {
+    .image-credits {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image-credits article {
+        width: 48%;
+    }
+
+    .image-credits article img {
+        display: block;
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 950px) {
+    article {
+        margin-bottom: 0;
+    }
+
+    .image-credits {
+        margin-bottom: 32px;
+    }
+
+    .image-credits article {
+        width: 33%;
+    }
+
+    .image-credits article img {
+        height: 350px;
+        margin-bottom: 5px;
+    }
+}
